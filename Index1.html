@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Custom Talk</title>
+	<link rel="stylesheet" type="text/css" href="Chillistyle1.css">
+	<link rel="icon" href="images/favicon.png">
+<!--	<link rel="stylesheet" type="text/css" href="x3dom.css">
+	<script type="text/javascript" src="http://www.x3dom.org/x3dom/release/x3dom.js"></script>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jqueryLogic1.js"></script>
+	<script src="customNav.js"></script>
+</head>
+
+
+
+<body onload="init()">
+
+
+	<table id="contentTable">
+		<tr>
+			<td>
+				<div id="header"><div id="logoCont"><img id="myLogo" src="images/logo1.png"></div></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="container0">
+
+					<div class="container1">
+
+						<div id="menuPanel">
+							<div class="customHalves" id="generalOptions">
+								<ul id="generalOptionsList" class="buttonText">
+									<li id="baseOptions">Base</li>
+									<li id="extrasOptions">Extras</li>
+									<li id="leatherOptions">Leather</li>
+									<li id="engravingsOptions">Engravings</li>
+								</ul>
+							</div><div class="customHalves" id="specificOptions">
+								<div class="specificOptionsCont" id="specificBaseOptions">
+									<div class="specificOptionPic" id="round">
+										<img src="images/bases/round1.png">
+										<p>Round Top</p>
+									</div>
+									<div class="specificOptionPic" id="square">
+										<img src="images/bases/square1.png">
+										<p>Angular Top</p>
+									</div>
+								</div>
+								<div class="specificOptionsCont" id="specificExtrasOptions">
+									<div class="specificOptionPic" id="leftPocket">
+										<img src="images/extras/leftPocket.png">
+										<p>Pocket #1</p>
+									</div>
+									<div class="specificOptionPic" id="rightPocket">
+										<img src="images/extras/rightPocket.png">
+										<p>Pocket #2</p>
+									</div>
+								</div>
+								<div class="specificOptionsCont" id="specificLeatherOptions">
+									<div class="specificOptionPic" id="alga">
+										<img src="images/leathers/alga.png">
+										<p>Alga</p>
+									</div>
+									<div class="specificOptionPic" id="chestnut">
+										<img src="images/leathers/chestnut.png">
+										<p>Chestnut</p>
+									</div>
+									<div class="specificOptionPic" id="buckskin">
+										<img src="images/leathers/buckskin.png">
+										<p>Buckskin</p>
+									</div>
+									<div class="specificOptionPic" id="red_brown">
+										<img src="images/leathers/red_brown.png">
+										<p>Red Brown</p>
+									</div>
+									<div class="specificOptionPic" id="dark_brown">
+										<img src="images/leathers/dark_brown.png">
+										<p>Dark Brown</p>
+									</div>
+									<div class="specificOptionPic" id="black">
+										<img src="images/leathers/black.png">
+										<p>Black</p>
+									</div>
+									<div class="specificOptionPic" id="wine">
+										<img src="images/leathers/wine.png">
+										<p>Wine</p>
+									</div>
+									<div class="specificOptionPic" id="burgundy">
+										<img src="images/leathers/burgundy.png">
+										<p>Burgundy</p>
+									</div>
+									<div class="specificOptionPic" id="smoke">
+										<img src="images/leathers/smoke.png">
+										<p>Smoke</p>
+									</div>
+									<div class="specificOptionPic" id="saddle">
+										<img src="images/leathers/saddle.png">
+										<p>Saddle</p>
+									</div>
+								</div>
+								<div class="specificOptionsCont" id="specificEngravingsOptions">
+								</div>
+							</div>
+							<div class="menuHalves">
+								<div class="buttonContainer1">
+									<div id="craftsmenCont">
+										<div class="buttonTextCont" id="craftsmenText">
+											<h1 class="buttonText">Craftsmen</h1>
+										</div>
+										<img src="images/craftsmenTools.jpg" alt="Craftsmen" id="craftsmenPic">
+									</div>
+								</div>
+								<div class="buttonContainer1">
+									<div id="galleryCont">
+										<div class="buttonTextCont" id="galleryText">
+											<h1 class="buttonText">Gallery</h1>
+										</div>
+										<img src="images/bag.jpg" alt="Gallery" id="galleryPic">
+									</div>
+								</div>
+							</div><div class="menuHalves">
+								<div class="buttonContainer2">
+									<div id="aboutUsCont">
+										<div class="buttonTextCont" id="aboutUsText">
+											<h1 class="buttonText">About Us</h1>
+										</div>
+										<img src="images/bikeElongated.jpg" alt="About Us" id="aboutUsPic">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div><div class="container1">
+						<div id="modelPanel">
+<!-- 							<x3d id="x3d" style="border:none">
+								<scene>
+								    <transform translation="0 0 -1">
+								    	<shape>
+								        	<appearance>
+								          		<material id="color" diffuseColor='1 0 0'></material>  
+								        	</appearance>
+								        	<box></box>
+									      	</shape>
+									    </transform>
+									    <transform translation="0 0 0.5">
+									      	<shape>
+								        	<appearance>
+								          		<material diffuseColor='0 0 1'></material>  
+								        	</appearance>
+								        	<sphere></sphere>
+								      	</shape>
+								    </transform>
+								</scene>
+							</x3d> -->
+						</div>
+						<div id="textPanel">
+							<br/>
+							<br/>
+							<span id="dependentText"></span>
+						</div>
+					</div>
+
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="container2">
+					<div id="actionButtonCont0">
+						<img class="actionButton" id="getStartedPic" src="images/getStarted1.png">
+					</div>
+					<div id="actionButtonCont1">
+						<img class="actionButton" id="customTalkPic" src="images/customTalk1.png"><img class="actionButton" id="checkoutPic" src="images/checkout1.png">
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="footer">
+					<div id="footerBlockHolder" align="center">
+						<div class="footerBlock">
+							<ul>
+								<li style="font-size: 16px">Information</li>
+								<li>Delivery Information</li>
+								<li>Privacy Policy</li>
+								<li>Terms &amp Conditions</li>
+							</ul>
+						</div>
+						<div class="footerBlock">
+							<ul>
+								<li style="font-size: 16px">Customer Service</li>
+								<li>Returns</li>
+								<li>Contact Us</li>
+								<li>FAQ</li>
+							</ul>
+						</div>
+						<div class="footerBlock">
+							<ul>
+								<li style="font-size: 16px">My Account</li>
+								<li>Last Viewed</li>
+								<li>Order History</li>
+								<li>Wish List</li>
+							</ul>
+						</div>
+						<div class="footerBlock">
+							<ul>
+								<li style="font-size: 16px">Follow Us</li>
+								<li>
+									<img src="images/facebookIcon.png" alt="Facebook" width="50px" height="50px">
+									<img src="images/instagramIcon.png" alt="Instagram" width="50px" height="50px">
+									<img src="images/pinterestIcon.png" alt="Pinterest" width="50px" height="50px">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+
+</html>
